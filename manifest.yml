@@ -1,0 +1,7 @@
+---
+applications:
+- name: ratpackScript
+  memory: 768M
+  instances: 1
+  path: build/distributions/ratpackScript.zip
+  buildpack: https://github.com/cloudfoundry/java-buildpack.git

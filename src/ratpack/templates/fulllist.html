@@ -1,0 +1,33 @@
+<!doctype html>
+<html manifest="offline.appcache">
+<head>
+    <title>${model.subject}</title>
+    <% render "include.html" %>
+</head>
+<body>
+
+<!-- Header -->
+<% render "head.html" %>
+
+<div id="main">
+    <% model.questionAnswers.each { qa -> %>        
+        <p>
+        <div id="${qa.catagory}">        
+            <h1><u>${qa.catagory}</u></h1>
+        <small>source: <i><a href="${qa.source}">${qa.source}</a></i></small>        
+        <div class="question">
+        $qa.question
+        </div>
+        <div class="answer">
+        $qa.answer
+        </div>
+        </p>        
+        </div>
+        <% } %>                
+</div>        
+    
+<!-- Footer -->
+<% render "foot.html" %>
+ 
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+<!--
+	Prologue 1.2 by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html manifest="offline.appcache">
+	<head>
+		<title>${model.subject}</title>
+        <% render "include.html" %>
+	</head>
+	<body>
+		<!-- Header -->
+        <% render "head.html" %>
+
+		<!-- Main -->
+			<div id="main">
+			
+				<!-- Intro -->
+					<section id="top" class="one">
+						<div class="container">
+							<a href="images/coffeeView.jpg" class="image featured"><img src="images/coffeeView.jpg" alt="" /></a>
+							<header>
+								<h2 class="alt">Java interview Q and A</h2>
+							</header>
+							<p>A list of Java Q and A I have collected from the web, focus mainly on Java, hope you find it useful</p>
+
+							<footer>
+								<a href="#catagory" class="button scrolly">Catagory</a>
+							</footer>
+						</div>
+					</section>
+					
+				<!-- Portfolio -->
+					<section id="catagory" class="two">
+						<div class="container">
+					
+							<header>
+								<h2>Catagory</h2>
+							</header>											
+							<div class="row">
+                                <div class="4u">
+									<article class="item">
+										<a href="fulllist#Core Java" class="image full">
+                                        <p>
+                                            "Core Java" is AFAIK not an official, well-defined term. It is, however, the title of a book from Sun that introduces Java as a language and the most important parts of the Java SE Standard API
+                                        </p>
+                                        </a>
+										<header>
+											<h3>Core Java</h3>
+										</header>
+									</article>
+									<article class="item">                                        
+                                        <a href="fulllist#Concurrency/Multi-thread" class="image full">
+                                        <p>In parallel computing, execution literally occurs at the same instant, by contrast, concurrent computing consists of process lifetimes overlapping, but execution need not happen at the same instant.</p>
+                                        </a>
+										<header>
+											<h3>Concurrency/Multi-Threading</h3>
+										</header>
+									</article>                                
+                                </div>                                
+								<div class="4u">
+									<article class="item">
+										<a href="fulllist#JVM" class="image full">
+                                            <p>
+                                                Garbage collection is a mechanism provided by Java Virtual Machine to reclaim heap space from objects which are eligible for Garbage collection.
+                                            </p>
+                                        </a>
+										<header>
+											<h3>JVM Internals/Garbage Collection</h3>
+										</header>
+									</article>
+                                    <article class="item">
+										<a href="fulllist#JMS/MQ" class="image full">
+                                            <p>JMS is a messaging standard that allows application components based on the J2EE to create, send, receive, and read messages. It allows the communication between different components of a distributed application to be loosely coupled, reliable, and asynchronous.                                                
+                                            </p>
+                                        </a>
+										<header>
+											<h3>JMS/MQ</h3>
+										</header>
+									</article>
+								</div>
+								<div class="4u">
+									<article class="item">
+										<a href="fulllist#Design Patterns" class="image full">
+                                            <p>
+                                                In software engineering, a design pattern is a general reusable solution to a commonly occurring problem within a given context in software design.
+                                            </p>
+                                        </a>
+										<header>
+											<h3>Design Patterns</h3>
+										</header>
+									</article>
+									<article class="item">                                        
+										<a href="fulllist#Spring" class="image full">
+                                        <p>The Spring Framework is an open source application framework and inversion of control container for the Java platform. It has become a pouplar alternative to or even addition to EJB</p>
+                                        </a>
+										<header>
+											<h3>Spring</h3>
+										</header>
+									</article>                                    
+								</div>
+                                <!--
+								<div class="4u">
+                                    <article class="item">
+										<a href="fulllist#Tomcat" class="image full">
+                                            <p>Tomcat implements the Java Servlet and the JavaServer Pages (JSP) specifications from Sun Microsystems, and provides a "pure Java" HTTP web server environment for Java code to run in
+                                            </p>
+                                        </a>
+										<header>
+											<h3>Tomcat/Strut</h3>
+										</header>
+									</article>                                    
+									<article class="item">										
+                                        <a href="fulllist#realtime" class="image full">
+                                        <p>Real time Java is a catch-all term for a combination of technologies that allows programmers to write programs that meet the demands of real-time systems in the Java programming language.</p>                                        
+                                        </a>
+										<header>
+											<h3>Real-time Java</h3>
+										</header>
+									</article>
+                                    <article class="item">
+										<a href="fulllist#JDBC" class="image full">
+                                            <p>JDBC is an API for the Java programming language that defines how a client may access a database. JDBC is oriented towards relational databases.
+                                            </p>
+                                        </a>
+										<header>
+											<h3>JDBC</h3>
+										</header>
+									</article>
+								</div>
+                            -->
+							</div>
+
+						</div>
+					</section>
+			
+				<!-- Contact -->
+					<section id="contact" class="four">
+						<div class="container">
+
+							<header>
+								<h2>Contact Me</h2>
+							</header>
+
+							<p>If you find more java Q&A to share or have Java questions you like to see answers here, please let me know. Or if you just have comments in general, feel free to post to me too.</p>
+							
+							<form method="post" action="/comment" autocomplete="on" enctype="text/plain">                            
+								<div class="row half">
+									<div class="6u"><input type="text" class="text" name="name" id="name" placeholder="Name" /></div>
+									<div class="6u"><input type="text" class="text" name="email" id="email" placeholder="Email" /></div>
+								</div>
+								<div class="row half">
+									<div class="12u">
+										<textarea name="message" placeholder="Message"></textarea>
+									</div>
+								</div>
+								<div class="row">
+									<div class="12u">
+                                        <input type="submit" class="button submit" id="sendMsg" name="sendMsg" value="Send Message" />
+									</div>
+								</div>
+                                 <input type="hidden" name="client_name" id="client_name" value="FormClient">
+							</form>
+
+						</div>
+					</section>
+			
+			</div>
+
+		<!-- Footer -->
+        <% render "foot.html" %>
+
+	</body>
+</html>

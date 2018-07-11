@@ -1,0 +1,35 @@
+{
+	"version": "0.1",
+	"name": "Java interview Q & A",
+	"description": "Java interview Q & A",
+	"launch_path": "/index",
+	"appcache_path": "/offline.appcache",
+	"icons": {
+		"16": "/public/images/appicon-16.png",
+		"48": "/public/images/appicon-48.png",
+		"128": "/public/images/appicon-128.png"
+	},
+	"developer": {
+		"name": "gwaydust",
+		"url": "http://localhost:5050"
+	},
+	"installs_allowed_from": ["*"],
+	"locales": {
+		"es": {
+			"description": "Java pregunta de la entrevista y respuestas",
+			"developer": {
+				"url": "http://localhost:5050"
+			}
+		},
+		"it": {
+			"description": "Java domanda intervista e risposte",
+			"developer": {
+				"url": "http://localhost:5050"
+			}
+		}
+	},
+	"default_locale": "en",
+	"permissions": {
+		"systemXHR": {}
+	}
+}
